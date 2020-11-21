@@ -1,32 +1,56 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Security.Cryptography;
+using System.Threading;
 
 namespace GameHella
 {
     class Program
     {
-
-        
-
         static void Main(string[] args)
         {
-
-            Point p1 = new Point();
-            p1.x = 6;
-            p1.y = 7;
-            p1.sym = '3';
-            Draw(p1.x, p1.y, p1.sym);
+            Console.SetBufferSize(80, 25);
+            Walls walls = new Walls(80, 25);
+            walls.Draw();
 
 
-            Draw(1, 3, '*');
-            Draw(5, 5, '#');
-            Console.ReadLine();
+
+
+
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
+
+            FoodCreator foodCreator = new FoodCreator(80, 25, '$');
+            Point food = foodCreator.CreateFood();
+            food.Draw();
+
+            while (true)
+            {
+                if (walls.IsHit(snake) || snake.IsHitTail())
+                {
+                    break;
+                }
+                if(snake.Eat(food))
+                {
+                    food = foodCreator.CreateFood();
+                    food.Draw();
+                } else
+                {
+                    snake.Move();
+                }
+                Thread.Sleep(100);
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+                }
+                
+            }
+
         }
 
-        static void Draw(int x, int y, char sym)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
-        }
+        
     }
 }

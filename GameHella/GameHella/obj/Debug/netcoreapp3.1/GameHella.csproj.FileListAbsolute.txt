@@ -1,0 +1,13 @@
+C:\projects\game\GameHella\GameHella\bin\Debug\netcoreapp3.1\GameHella.exe
+C:\projects\game\GameHella\GameHella\bin\Debug\netcoreapp3.1\GameHella.deps.json
+C:\projects\game\GameHella\GameHella\bin\Debug\netcoreapp3.1\GameHella.runtimeconfig.json
+C:\projects\game\GameHella\GameHella\bin\Debug\netcoreapp3.1\GameHella.runtimeconfig.dev.json
+C:\projects\game\GameHella\GameHella\bin\Debug\netcoreapp3.1\GameHella.dll
+C:\projects\game\GameHella\GameHella\bin\Debug\netcoreapp3.1\GameHella.pdb
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.csprojAssemblyReference.cache
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.AssemblyInfoInputs.cache
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.AssemblyInfo.cs
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.csproj.CoreCompileInputs.cache
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.dll
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.pdb
+C:\projects\game\GameHella\GameHella\obj\Debug\netcoreapp3.1\GameHella.genruntimeconfig.cache
